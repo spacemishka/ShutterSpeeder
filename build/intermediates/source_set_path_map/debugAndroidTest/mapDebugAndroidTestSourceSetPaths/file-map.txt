@@ -1,0 +1,4 @@
+com.spacemishka.app.shutterspeeder.test-androidTest-0 C:\Users\peter\AndroidStudioProjects\ShutterSpeeder\build\generated\res\resValues\androidTest\debug
+com.spacemishka.app.shutterspeeder.test-mergeDebugAndroidTestResources-1 C:\Users\peter\AndroidStudioProjects\ShutterSpeeder\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.spacemishka.app.shutterspeeder.test-mergeDebugAndroidTestResources-2 C:\Users\peter\AndroidStudioProjects\ShutterSpeeder\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.spacemishka.app.shutterspeeder.test-debugAndroidTest-3 C:\Users\peter\AndroidStudioProjects\ShutterSpeeder\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
