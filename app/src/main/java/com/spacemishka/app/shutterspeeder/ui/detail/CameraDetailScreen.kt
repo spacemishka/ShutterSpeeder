@@ -235,13 +235,21 @@ private fun SensorMeasurement(
             color = MaterialTheme.colorScheme.primary
         )
         Spacer(modifier = Modifier.height(8.dp))
-
+        
+        // Calculated shutter speed (1/x)
+        val shutterSpeed = calculateShutterSpeed(duration)
+        Text(
+            text = shutterSpeed,
+            style = MaterialTheme.typography.titleLarge
+        )
+        
         // Duration
         Text(
             text = "${duration}μs",
-            style = MaterialTheme.typography.bodyLarge
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
         )
-
+        
         // Deviation percentage with color coding
         Text(
             text = String.format("%+.1f%%", deviationPercent),
@@ -252,13 +260,35 @@ private fun SensorMeasurement(
                 else -> MaterialTheme.colorScheme.error
             }
         )
-
+        
         // Absolute deviation
         Text(
             text = "${if (deviation >= 0) "+" else ""}${deviation}μs",
-            style = MaterialTheme.typography.bodyMedium,
+            style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
+    }
+}
+
+private fun calculateShutterSpeed(durationMicros: Long): String {
+    val fraction = 1_000_000.0 / durationMicros
+    return when {
+        fraction >= 1 -> {
+            val roundedFraction = if (fraction < 10) {
+                "%.1f".format(fraction)
+            } else {
+                "%.0f".format(fraction)
+            }
+            "1/$roundedFraction"
+        }
+        else -> {
+            val seconds = durationMicros / 1_000_000.0
+            if (seconds < 0.1) {
+                "1/%.1f".format(fraction)
+            } else {
+                "%.2fs".format(seconds)
+            }
+        }
     }
 }
 
