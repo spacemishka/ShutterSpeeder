@@ -12,13 +12,21 @@
 
 ShutterSpeeder/
 |- app/ # Main Android app module
+
 |- build/ # Build artifacts
+
 |- gradle/ # Gradle scripts and configuration
+
 |- .github/ # GitHub workflows (CI/CD)
+
 |- gradlew / gradlew.bat # Gradle wrapper scripts
+
 |- settings.gradle.kts
+
 |- build.gradle.kts
+
 |- gradle.properties
+
 |- ... # Additional configuration files
 
 ## 🧰 Requirements
