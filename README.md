@@ -41,6 +41,27 @@ Sync Gradle and build the project
 
 Install and run the app on a device or emulator
 
+## ⚖️ License Summary (Plain English)
+
+ShutterSpeeder is licensed under the **GNU General Public License v3.0 (GPLv3)**.
+
+This means:
+
+✅ **You can**
+- Use ShutterSpeeder for personal, educational, or commercial purposes  
+- Copy, distribute, and modify the code  
+- Sell products or services that include ShutterSpeeder, as long as the code remains open
+
+❌ **You cannot**
+- Make ShutterSpeeder (or a modified version) closed-source  
+- Distribute a modified version without also publishing the source code  
+- Remove or hide the original copyright notice
+
+💡 **In short:**  
+ShutterSpeeder is free software — free as in freedom.  
+You can use it however you want, but if you improve it, you must share those improvements with the community under the same GPLv3 license.
+
+For the full legal text, see the [LICENSE](LICENSE) file.
 
 
 <img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/d146f122-af86-4509-beb3-817aeb84ad7d" />
